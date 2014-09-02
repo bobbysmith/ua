@@ -1,0 +1,7 @@
+<% @flights.each do |f| %>
+  <%= f.origin %>
+  <%= f.destination %>
+  <%= f.date %>
+  <%= f.seat %>
+  <%= link_to "Boarding Pass", flight_path(f.id) %>
+<% end %>

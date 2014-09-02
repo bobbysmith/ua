@@ -1,0 +1,11 @@
+      <%= form_for @flight, method: "post" do |flight| %>
+        <%= flight.label :origin %>
+        <%= flight.select :origin, ["Austin, TX(AUS)", "Chicago, IL(MDW)"] %>
+        <%= flight.label :destination %>
+        <%= flight.select :destination, ["London, UK(LDN)", "New York, NY(JFK)"] %>
+        <%= flight.label :date %>
+        <%= flight.text_field :date %>
+        <%= flight.label :seat %>
+        <%= flight.select :seat, ["First", "Business", "Coach"] %>
+        <%= flight.submit "Book" %>
+      <% end %>

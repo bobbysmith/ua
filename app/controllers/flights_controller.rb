@@ -1,7 +1,7 @@
 class FlightsController < ApplicationController
 
   def index
-    @flights = Flight.all
+    @flights = Flight.order("date ASC")
   end
 
   def show
@@ -25,7 +25,7 @@ class FlightsController < ApplicationController
   def update
     @flight = Flight.find(params[:id])
 
-    %w{origin destination date class}.each do |param|
+    %w{origin destination date seat}.each do |param|
       if params[:flight][param].blank?
         params[:flight][param].delete
       end
@@ -43,7 +43,7 @@ class FlightsController < ApplicationController
 
   private
   def flight_params
-    params.require(:flight).permit(:origin, :destination, :date, :class)
+    params.require(:flight).permit(:origin, :destination, :date, :seat)
   end
 
 end
