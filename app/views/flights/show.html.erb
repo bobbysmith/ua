@@ -1,4 +1,9 @@
-<%= @flight.origin %>
-<%= @flight.destination %>
-<%= @flight.date %>
-<%= @flight.seat %>
+<div class="container">
+  <div class="row">
+    <%= @flight.origin %>
+    <%= @flight.destination %>
+    <%= @flight.date %>
+    <%= @flight.seat %>
+    <%= link_to "Go Back", flights_path %>
+  </div>
+</div>
