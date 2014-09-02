@@ -1,7 +1,12 @@
-<% @flights.each do |f| %>
-  <%= f.origin %>
-  <%= f.destination %>
-  <%= f.date %>
-  <%= f.seat %>
-  <%= link_to "Boarding Pass", flight_path(f.id) %>
+<%= current_user.first_name %> <%= current_user.last_name %><br>
+<% if @flights.empty? %>
+  <span>You currently have no flights.</span>
 <% end %>
+<% @flights.each do |f| %>
+  <%= f.origin %><br>
+  <%= f.destination %><br>
+  <%= f.date %><br>
+  <%= f.seat %><br>
+  <%= link_to "Boarding Pass", flight_path(f.id) %><br>
+<% end %>
+<%= link_to "Home", root_path %>

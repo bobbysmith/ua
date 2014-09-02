@@ -1,19 +1,20 @@
 class FlightsController < ApplicationController
+  before_filter :authenticate_user!
 
   def index
-    @flights = Flight.order("date ASC")
+    @flights = current_user.flights.order("date ASC")
   end
 
   def show
-    @flight = Flight.find(params[:id])
+    @flight = current_user.flights.find(params[:id])
   end
 
   def new
-    @flight = Flight.new
+    @flight = current_user.flights.new
   end
 
   def create
-    flight = Flight.new(flight_params)
+    flight = current_user.flights.new(flight_params)
     flight.save
     redirect_to flights_path
   end

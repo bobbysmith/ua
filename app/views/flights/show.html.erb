@@ -1,9 +1,14 @@
 <div class="container">
   <div class="row">
-    <%= @flight.origin %>
-    <%= @flight.destination %>
-    <%= @flight.date %>
-    <%= @flight.seat %>
+    <%= @flight.origin %><br>
+    <%= @flight.destination %><br>
+    <span>Flight 381</span><br>
+    <%= @flight.date %><br>
+    <span>12:30PM</span><br>
+    <span><%= current_user.last_name %>, </span>
+    <span><%= current_user.first_name %></span><br>
+    <span>Gate A3</span><br>
+    <%= @flight.seat %><br>
     <%= link_to "Go Back", flights_path %>
   </div>
 </div>
