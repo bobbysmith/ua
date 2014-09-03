@@ -17,7 +17,7 @@
   <%= yield %>
     <% if user_signed_in? %>
       <div class="nav">
-          <span class="top name">Hi, <%= current_user.first_name.capitalize %> <%= current_user.last_name.capitalize %></span>
+          <span class="top name" style="text-align: center;">Hi, <%= current_user.first_name.capitalize %> <%= current_user.last_name.capitalize %></span>
           <span class="user-menu"><%= link_to "BOOK FLIGHT", new_flight_path %></span>
           <span class="user-menu"><%= link_to "CHECK IN", flights_path %></span>
           <span class="user-menu"><%= link_to "SIGN OUT", destroy_user_session_path, :method => "delete" %></span>

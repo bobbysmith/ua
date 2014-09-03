@@ -112,8 +112,8 @@ span.user-menu:nth-child(2) {
 
 .name {
   color: white;
-  font-weight: bold;
-  letter-spacing: 0.5px;
+  font-weight: normal;
+  letter-spacing: 0.7px;
 }
 
 .container a {
@@ -183,9 +183,9 @@ p {
 }
 
 .qr img{
-  height: 100px;
-  width: 100px;
-  padding: 2px;
+  height: 95px;
+  width: 95px;
+  padding: 0px;
   float: right;
   border: 1px solid black;
 }
