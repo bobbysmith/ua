@@ -1,16 +1,18 @@
-<div class="container screen">
-<div class="row">
-<%= current_user.first_name %> <%= current_user.last_name %><br>
-<% if @flights.empty? %>
-  <span>You currently have no flights.</span>
-<% end %>
-<% @flights.each do |f| %>
-  <%= f.origin %><br>
-  <%= f.destination %><br>
-  <%= f.date %><br>
-  <%= f.seat %><br>
-  <%= link_to "Boarding Pass", flight_path(f.id) %><br>
-<% end %>
-<%= link_to "Home", root_path %>
-</div>
+<div class="container">
+  <div class="row">
+    <div class="title"><h4>ALL FLIGHTS</h4></div>
+      <!-- <div class="flight"> -->
+        <% if @flights.empty? %>
+          <span style="line-height: 250px; margin-left: 30px;">You currently have no flights.</span>
+        <% end %>
+        <% @flights.each do |f| %>
+          <%= f.origin %><br>
+          <%= f.destination %><br>
+          <%= f.date.strftime("%b %d, %Y") %><br>
+          <%= f.seat %><br>
+          <%= link_to "Boarding Pass", flight_path(f.id) %><br>
+          <hr>
+        <% end %>
+      <!-- </div> -->
+  </div>
 </div>

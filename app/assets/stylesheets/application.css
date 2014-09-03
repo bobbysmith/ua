@@ -17,7 +17,7 @@
  */
 
  * {
-  border: 1px solid green;
+  /*border: 1px solid green;*/
  }
 
  body {
@@ -35,30 +35,38 @@
   /*z-index: 10;*/
   height: 100%;
   padding: 10px;
-  border: 1px solid red;
+  border: 1px solid black;
+}
+
+.auth {
+  background: #003693;
+/*  padding-top: 10px;
+  position: relative;*/
+}
+
+.row {
+  margin-top: 35px;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
 }
 
 .title {
   text-align: center;
-  background: #003683;
-  position: relative;
-  width: 100%;
-  top: 0;
 }
 
-
-
 .nav {
-  bottom: 0;
+  top: 0;
   position: absolute;
   padding: 5px 5px 2px 5px;
-  background: #003683;
+  background: #003693;
   width: 100%;
+  border: 1px solid black;
+  border-bottom: none;
 }
 
 .nav a {
   color: white;
-
 }
 
 .nav span:nth-child(1) {
@@ -69,8 +77,42 @@
   margin-left: 90px;
 }
 
+span.user-menu {
+  margin-left: 10px;
+}
+
+span.user-menu:nth-child(2) {
+  margin-left: 5px;
+}
+
+.user-menu {
+  /*float: left;*/
+  padding: 5px;
+}
+
+.top {
+  display: block;
+  /*float: left;*/
+  margin-left: 0 !important;
+}
+
+.name {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
 .container a {
   color: white;
+}
+
+.row a {
+  color: blue;
+}
+
+.button {
+  background: transparent;
+  border: 1px solid white;
 }
 
 
