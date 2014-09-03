@@ -2,7 +2,7 @@ class FlightsController < ApplicationController
   before_filter :authenticate_user!
 
   def index
-    @flights = current_user.flights.order("date DESC")
+    @flights = current_user.flights.order("date ASC")
   end
 
   def show
@@ -39,7 +39,7 @@ class FlightsController < ApplicationController
   def destroy
     @flight = Flight.find(params[:id])
     @flight.delete
-    redirect_to blogs_path
+    redirect_to flights_path
   end
 
   private

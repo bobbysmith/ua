@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  *= require foundation_and_overrides
+ *= require jquery-ui/datepicker
 
  */
 
@@ -28,7 +29,7 @@
   background: url("iphone.png") top no-repeat;
   font-size: 10px;
   font-family: "Lato";
-  font-weight: bold;
+  /*font-weight: 800;*/
  }
 
 .container {
@@ -133,6 +134,10 @@ h6 {
   margin: 0;
 }
 
+p {
+  font-weight: bold;
+}
+
 .ticket {
   height: 50px;
   width: 90px;
@@ -159,4 +164,10 @@ h6 {
   padding: 3px;
   float: right;
   border: 1px solid black;
+}
+
+.ui-datepicker {
+/*position: absolute;*/
+top: 190px !important;
+left: 28px !important;
 }

@@ -8,7 +8,7 @@
         <% @flights.each do |f| %>
           <%= f.origin %><br>
           <%= f.destination %><br>
-          <%= f.date.strftime("%b %d, %Y") %><br>
+          <%= f.date.strftime("%d %b, %Y") %><br>
           <%= f.seat %><br>
           <%= link_to "Boarding Pass", flight_path(f.id) %><br>
           <hr>
