@@ -6,6 +6,7 @@
           <span style="line-height: 250px; margin-left: 30px;">You currently have no flights.</span>
         <% end %>
         <% @flights.each do |f| %>
+          <a href="<%= flight_path(f.id) %>"><div style="float: right; margin: 5px 15px 0 0;"><%= image_tag "airplane2.png" %></div></a>
           <%= f.origin %><br>
           <%= f.destination %><br>
           <% if f.destination == "London, UK (LDN)" %>

@@ -15,19 +15,19 @@
   <body>
 
   <%= yield %>
-      <% if user_signed_in? %>
-    <div class="nav">
-        <span class="top name">Welcome, <%= current_user.first_name.capitalize %> <%= current_user.last_name.capitalize %></span>
-        <span class="user-menu"><%= link_to "BOOK FLIGHT", new_flight_path %></span>
-        <span class="user-menu"><%= link_to "CHECK IN", flights_path %></span>
-        <span class="user-menu"><%= link_to "SIGN OUT", destroy_user_session_path, :method => "delete" %></span>
-    </div>
-      <% else %>
+    <% if user_signed_in? %>
+      <div class="nav">
+          <span class="top name">Hi, <%= current_user.first_name.capitalize %> <%= current_user.last_name.capitalize %></span>
+          <span class="user-menu"><%= link_to "BOOK FLIGHT", new_flight_path %></span>
+          <span class="user-menu"><%= link_to "CHECK IN", flights_path %></span>
+          <span class="user-menu"><%= link_to "SIGN OUT", destroy_user_session_path, :method => "delete" %></span>
+      </div>
+    <% else %>
       <div class="nav no-bg">
         <span><%= link_to "SIGN UP", new_user_registration_path %></span>
         <span><%= link_to "LOGIN", new_user_session_path %></span>
         </div>
-      <% end %>
+    <% end %>
   <%= javascript_include_tag "application" %>
   </body>
 </html>

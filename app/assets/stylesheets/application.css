@@ -36,7 +36,7 @@
   height: 425px;
   padding: 10px;
   border: 1px solid black;
-  background: url("background.png") center;
+  background: url("clouds.jpg") center;
   overflow: scroll;
 }
 
@@ -182,5 +182,6 @@ p {
 }
 
 .check-in {
-  background: #7F9AC7 !important;
+  background: url("clouds.jpg") center no-repeat !important;
 }
+
