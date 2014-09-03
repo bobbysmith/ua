@@ -1,15 +1,33 @@
 <div class="container">
   <div class="row">
-    <div class="title"><h4>BOARDING PASS</h4></div>
-    <%= @flight.origin %><br>
-    <%= @flight.destination %><br>
-    <span>Flight 381</span><br>
-    <%= @flight.date.strftime("%b %d, %Y") %><br>
-    <span>12:30PM</span><br>
-    <span><%= current_user.last_name %>, </span>
-    <span><%= current_user.first_name %></span><br>
-    <span>Gate A3</span><br>
-    <%= @flight.seat %><br>
-    <%= link_to "Go Back", flights_path %>
+    <div class="title"><%= image_tag ("ticket-logo.png") %><h4><%= current_user.last_name %>, <%= current_user.first_name %></h4></div>
+
+    <h6><%= @flight.origin %></h6><br>
+    <span class="plane"><%= image_tag ("airplane.png") %></span><br>
+    <h6><%= @flight.destination %></h6><br>
+    <div class="ticket">
+      <p>FLIGHT</p>
+      <span>UA 381</span>
+    </div>
+    <div class="ticket">
+      <p>DATE</p>
+      <span>12:30PM</span><br>
+      <%= @flight.date.strftime("%b %d, %Y") %>
+    </div>
+    <div class="ticket">
+      <p>GATE</p>
+      <span>A3</span><br>
+    </div>
+    <div class="ticket">
+      <p>SEAT</p>
+      <% if @flight.seat == "First Class" %>
+        3A
+      <% elsif @fligh.seat == "Business Class" %>
+        6C
+      <% else %>
+        22F
+      <% end %>
+    </div>
+    <span class="qr"><%= image_tag ("qr.png") %></span>
   </div>
 </div>

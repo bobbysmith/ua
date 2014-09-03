@@ -24,28 +24,29 @@
   width: 242px;
   height: 425px;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 9%;
   background: url("iphone.png") center no-repeat;
   font-size: 10px;
   font-family: "Lato";
+  font-weight: bold;
  }
 
 .container {
-  /*margin-top:;*/
-  /*z-index: 10;*/
   height: 100%;
   padding: 10px;
   border: 1px solid black;
+  background: url("background.png") fixed center no-repeat;
+  overflow: scroll;
 }
 
-.auth {
+/*.auth {
   background: #003693;
-/*  padding-top: 10px;
-  position: relative;*/
-}
+  padding-top: 10px;
+  position: relative;
+}*/
 
 .row {
-  margin-top: 35px;
+  margin-top: 30px;
   font-size: 12px;
   font-weight: bold;
   color: black;
@@ -111,21 +112,63 @@ span.user-menu:nth-child(2) {
 }
 
 .button {
-  background: transparent;
+  background: #003693;
   border: 1px solid white;
 }
 
+h2 {
+  font-size: 10px;
+  color: red;
+  display: none;
+}
 
-/*.link {
-  text-align: right;
-  width: 235px;
-  height: 20px;
-  background-color: green;
-  color: white;
+#error_explanation li {
+  font-size: 10px;
+  /*display: inline;*/
+  color: red;
+}
+
+input#user_first_name, input#user_last_name {
+  width: 100px;
+}
+
+.fullname {
+  display: inline;
+  float: left;
+}
+
+h6 {
+  text-align: center;
+  margin: 0;
+}
+
+.ticket {
+  height: 50px;
+  width: 90px;
+  display: inline-block;
+  float: left;
+  margin: 0 0 5px 15px;
+  padding: 5px;
+}
+
+.ticket p {
+  margin-bottom: 0;
+}
+
+.plane img {
+  width: 40px;
+  height: 10px;
+  margin-left: 85px;
+  margin-bottom: 10px;
+}
+
+.qr img{
+  height: 100px;
+  width: 100px;
   padding: 3px;
-  margin-bottom: 5px;
-  display: block;
-}*/
+  float: right;
+  border: 1px solid black;
+}
 
 /*landscape*/
 @media screen and (max-width: 568px) {

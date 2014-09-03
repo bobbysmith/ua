@@ -3,14 +3,14 @@
 <div class="title"><h4>BOOK FLIGHT</h4></div>
     <%= form_for @flight, method: "post" do |flight| %>
       <%= flight.label :origin %>
-      <%= flight.select :origin, ["--Select Departure--", "Austin, TX (AUS)", "Chicago, IL (MDW)", "New York, NY (JFK)", "London, UK (LDN)", "Los Angeles, CA (LAX)"] %>
+      <%= flight.select :origin, ["Austin, TX (AUS)", "Chicago, IL (MDW)", "New York, NY (JFK)", "London, UK (LDN)", "Los Angeles, CA (LAX)"], :prompt => "-Departure City-" %>
       <%= flight.label :destination %>
-      <%= flight.select :destination, ["--Select Arrival--", "London, UK (LDN)", "New York, NY (JFK)", "Los Angeles, CA (LAX)", "Abu Dhabi AE (AZI)", "Milan, Italy (MXP)"] %>
+      <%= flight.select :destination, ["London, UK (LDN)", "New York, NY (JFK)", "Los Angeles, CA (LAX)", "Abu Dhabi AE (AZI)", "Milan, Italy (MXP)"], :prompt => "-Arrival City-" %>
       <%= flight.label :date %>
       <%= flight.text_field :date %>
       <%= flight.label :seat %>
-      <%= flight.select :seat, ["--Select Ticket Class--", "First Class", "Business Class", "Economy Class"] %>
-      <%= flight.submit "Book" %>
+      <%= flight.select :seat, ["First Class", "Business Class", "Economy Class"], :prompt => "-Ticket Class-" %>
+      <%= flight.submit "Book", :class => "tiny button" %>
     <% end %>
 
 </div>
