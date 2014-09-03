@@ -27,8 +27,9 @@
   margin-top: 89px;
   background: url("iphone.png") top no-repeat;
   font-size: 10px;
-  font-family: "Lato";
-  /*font-weight: 800;*/
+  /*font-family: "Lato";*/
+  font-family: "Arial", "Helvetica", "sans-serif";
+  font-weight: lighter;
  }
 
 .container {
@@ -167,4 +168,8 @@ p {
   padding: 3px;
   float: right;
   border: 1px solid black;
+}
+
+.check-in {
+  background: #7F9AC7;
 }
