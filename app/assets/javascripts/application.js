@@ -20,5 +20,5 @@
 $(function(){ $(document).foundation(); });
 
 $(function() {
-  $('.datepicker').datepicker({ dateFormat: 'dd-mm-yy' }).val();
+  $('.datepicker').datepicker({ dateFormat: 'dd-mm-yy' });
 });
