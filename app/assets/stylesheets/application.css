@@ -32,7 +32,7 @@
  }
 
 .container {
-  /*height: 425px;*/
+  height: 425px;
   padding: 10px;
   border: 1px solid black;
   background: url("background.png") center;
