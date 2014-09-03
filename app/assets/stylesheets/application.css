@@ -24,26 +24,21 @@
   width: 242px;
   height: 425px;
   margin: 0 auto;
-  margin-top: 9%;
+  margin-top: 100px;
   background: url("iphone.png") center no-repeat;
   font-size: 10px;
   font-family: "Lato";
   font-weight: bold;
+
  }
 
 .container {
-  height: 100%;
+  height: 425px;
   padding: 10px;
   border: 1px solid black;
   background: url("background.png") center;
   overflow: scroll;
 }
-
-/*.auth {
-  background: #003693;
-  padding-top: 10px;
-  position: relative;
-}*/
 
 .row {
   margin-top: 30px;
@@ -61,7 +56,7 @@
   position: absolute;
   padding: 5px 5px 2px 5px;
   background: #003693;
-  width: 100%;
+  width: 242px;
   border: 1px solid black;
   border-bottom: none;
 }
@@ -87,13 +82,11 @@ span.user-menu:nth-child(2) {
 }
 
 .user-menu {
-  /*float: left;*/
   padding: 5px;
 }
 
 .top {
   display: block;
-  /*float: left;*/
   margin-left: 0 !important;
 }
 
@@ -124,7 +117,6 @@ h2 {
 
 #error_explanation li {
   font-size: 10px;
-  /*display: inline;*/
   color: red;
 }
 
@@ -168,14 +160,4 @@ h6 {
   padding: 3px;
   float: right;
   border: 1px solid black;
-}
-
-/*landscape*/
-@media screen and (max-width: 568px) {
-
-}
-
-/*vertical*/
-@media screen and (max-width: 320px) {
-
 }
