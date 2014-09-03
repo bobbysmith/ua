@@ -144,9 +144,9 @@ input#user_first_name, input#user_last_name {
   width: 100px;
 }
 
-/*select#flight_month, select#flight_day, select#flight_year {
-  width: 71px;
-}*/
+input#user_password {
+  display: -moz-box;
+}
 
 .fullname {
   display: inline;
