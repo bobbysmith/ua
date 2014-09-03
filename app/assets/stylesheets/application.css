@@ -35,7 +35,7 @@
   height: 100%;
   padding: 10px;
   border: 1px solid black;
-  background: url("background.png") fixed center no-repeat;
+  background: url("background.png") center;
   overflow: scroll;
 }
 
