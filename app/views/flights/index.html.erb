@@ -1,3 +1,5 @@
+<div class="container screen">
+<div class="row">
 <%= current_user.first_name %> <%= current_user.last_name %><br>
 <% if @flights.empty? %>
   <span>You currently have no flights.</span>
@@ -10,3 +12,5 @@
   <%= link_to "Boarding Pass", flight_path(f.id) %><br>
 <% end %>
 <%= link_to "Home", root_path %>
+</div>
+</div>

@@ -1,16 +1,14 @@
-<div class="container">
-  <div class="row large-4">
+
   <%= link_to "Home", root_path %>
     <%= form_for @flight, method: "post" do |flight| %>
       <%= flight.label :origin %>
-      <%= flight.select :origin, ["--Select Departure City--", "Austin, TX (AUS)", "Chicago, IL (MDW)"] %>
+      <%= flight.select :origin, ["--Select Departure--", "Austin, TX (AUS)", "Chicago, IL (MDW)"] %>
       <%= flight.label :destination %>
-      <%= flight.select :destination, ["--Select Arrival City--", "London, UK (LDN)", "New York, NY (JFK)"] %>
+      <%= flight.select :destination, ["--Select Arrival--", "London, UK (LDN)", "New York, NY (JFK)"] %>
       <%= flight.label :date %>
       <%= flight.text_field :date %>
       <%= flight.label :seat %>
       <%= flight.select :seat, ["--Select Ticket Class--", "First Class", "Business Class", "Economy Class"] %>
       <%= flight.submit "Book" %>
     <% end %>
-  </div>
-</div>
+

@@ -1,11 +1,2 @@
-
-    <% if user_signed_in? %>
-      <span>Welcome, <%= current_user.first_name %> <%= current_user.last_name %></span>
-      <span><%= link_to "Book Flight", new_flight_path %></span>
-      <span><%= link_to "Boarding Passes", flights_path %></span>
-      <span><%= link_to "Sign Out", destroy_user_session_path, :method => "delete" %></span>
-    <% else %>
-      <span><%= link_to "Sign Up", new_user_registration_path %></span>
-      <span><%= link_to "Login", new_user_session_path %></span>
-    <% end %>
+<div class="home"><%= image_tag "home-screen.png", :class => "logo" %></div>
 

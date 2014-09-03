@@ -2,7 +2,7 @@ class FlightsController < ApplicationController
   before_filter :authenticate_user!
 
   def index
-    @flights = current_user.flights.order("date ASC")
+    @flights = current_user.flights.order("date DESC")
   end
 
   def show
