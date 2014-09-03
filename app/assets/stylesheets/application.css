@@ -22,18 +22,17 @@
 
  body {
   width: 242px;
-  height: 425px;
+  min-height: 425px;
   margin: 0 auto;
-  margin-top: 100px;
-  background: url("iphone.png") center no-repeat;
+  margin-top: 89px;
+  background: url("iphone.png") top no-repeat;
   font-size: 10px;
   font-family: "Lato";
   font-weight: bold;
-
  }
 
 .container {
-  height: 425px;
+  /*height: 425px;*/
   padding: 10px;
   border: 1px solid black;
   background: url("background.png") center;
