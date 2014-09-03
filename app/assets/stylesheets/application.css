@@ -167,7 +167,7 @@ p {
 }
 
 .ui-datepicker {
-position: absolute;
+position: absolute; !important;
 top: 190px !important;
 left: 28px !important;
 }
