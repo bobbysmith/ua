@@ -55,10 +55,22 @@
   top: 0;
   position: absolute;
   padding: 5px 5px 2px 5px;
-  background: #003693;
   width: 242px;
   border: 1px solid black;
   border-bottom: none;
+  background: #1e5799; /* Old browsers */
+  background: -moz-linear-gradient(top,  #1e5799 40%, #1e5799 46%, #1e5799 46%, #1e5799 58%, #003693 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%,#1e5799), color-stop(46%,#1e5799), color-stop(46%,#1e5799), color-stop(58%,#1e5799), color-stop(100%,#003693)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #1e5799 40%,#1e5799 46%,#1e5799 46%,#1e5799 58%,#003693 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #1e5799 40%,#1e5799 46%,#1e5799 46%,#1e5799 58%,#003693 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #1e5799 40%,#1e5799 46%,#1e5799 46%,#1e5799 58%,#003693 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #1e5799 40%,#1e5799 46%,#1e5799 46%,#1e5799 58%,#003693 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#003693',GradientType=0 ); /* IE6-9 */
+  border-bottom: 1px solid #1E5799;
+}
+
+.nav.no-bg {
+  background: #003693;
 }
 
 .nav a {
@@ -124,9 +136,9 @@ input#user_first_name, input#user_last_name {
   width: 100px;
 }
 
-select#flight_month, select#flight_day, select#flight_year {
+/*select#flight_month, select#flight_day, select#flight_year {
   width: 71px;
-}
+}*/
 
 .fullname {
   display: inline;
