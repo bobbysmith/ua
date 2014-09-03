@@ -72,6 +72,15 @@
   background: #003693;
 }
 
+div.container.ticket {
+  background: url("ticket.png") center no-repeat;
+  height: ;
+  width: 242px;
+  height: 425px;
+  padding: 10px;
+  margin-left: 0;
+}
+
 .nav a {
   color: white;
 }
@@ -176,12 +185,8 @@ p {
 .qr img{
   height: 100px;
   width: 100px;
-  padding: 3px;
+  padding: 2px;
   float: right;
   border: 1px solid black;
-}
-
-.check-in {
-  background: url("clouds.jpg") center no-repeat !important;
 }
 
