@@ -8,7 +8,17 @@
         <% @flights.each do |f| %>
           <%= f.origin %><br>
           <%= f.destination %><br>
-          <%= f.date.strftime("%d %b, %Y") %><br>
+          <% if f.destination == "London, UK (LDN)" %>
+            <%= "Sept 5, 2014" %> <br>
+          <% elsif f.destination == "Tokyo, JA (HND)" %>
+            <%= "Sept 19 5, 2014" %> <br>
+          <% elsif f.destination == "Hong Kong, CN (HKG)" %>
+            <%= "Oct 12, 2014" %> <br>
+          <% elsif f.destination == "Abu Dhabi, AE (AZI)" %>
+            <%= "Nov 3, 2014" %> <br>
+          <% elsif f.destination == "Milan, IT (MXP)" %>
+            <%= "Dec 20, 2014" %> <br>
+          <% end %>
           <%= f.seat %><br>
           <%= link_to "Boarding Pass", flight_path(f.id) %><br>
           <hr>

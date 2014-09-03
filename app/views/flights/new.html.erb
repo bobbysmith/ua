@@ -2,9 +2,9 @@
 <div class="row">
 <div class="title"><h4>BOOK FLIGHT</h4></div>
     <%= form_for @flight, method: "post" do |flight| %>
-      <%= flight.select :origin, [["Select Departure", ""], "Austin, TX (AUS)", "Chicago, IL (MDW)", "New York, NY (JFK)", "London, UK (LDN)", "Los Angeles, CA (LAX)"], :required => true %>
-      <%= flight.select :destination, [["Select Destination", ""] , "London, UK (LDN)", "New York, NY (JFK)", "Los Angeles, CA (LAX)", "Abu Dhabi AE (AZI)", "Milan, Italy (MXP)"], :required => true %>
-      <%= flight.text_field :date, :class => "datepicker", :placeholder => "Date", :required => true %>
+      <%= flight.select :origin, [["Select Departure", ""], "Austin, TX (AUS)", "Chicago, IL (MDW)", "New York, NY (JFK)", "Miami, FL (MIA)", "Los Angeles, CA (LAX)"], :required => true %>
+      <%= flight.select :destination, [["Select Destination", ""] , "London, UK (LDN)", "Tokyo, JA (HND)", "Hong Kong, CN (HKG)", "Abu Dhabi, AE (AZI)", "Milan, IT (MXP)"], :required => true %>
+
       <%= flight.select :seat, [["Select Seat Class", ""] , "First Class", "Business Class", "Economy Class"], :required => true %>
       <%= flight.submit "Book", :class => "tiny button" %>
     <% end %>

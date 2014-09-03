@@ -11,8 +11,18 @@
     </div>
     <div class="ticket">
       <p>DATE</p>
-      <span>12:30PM</span><br>
-      <%= @flight.date.strftime("%d %b, %Y") %>
+      <span>2:00PM</span><br>
+      <% if @flight.destination == "London, UK (LDN)" %>
+        <%= "Sept 5, 2014" %> <br>
+      <% elsif @flight.destination == "Tokyo, JA (HND)" %>
+        <%= "Sept 19 5, 2014" %> <br>
+      <% elsif @flight.destination == "Hong Kong, CN (HKG)" %>
+        <%= "Oct 12, 2014" %> <br>
+      <% elsif @flight.destination == "Abu Dhabi, AE (AZI)" %>
+        <%= "Nov 3, 2014" %> <br>
+      <% elsif @flight.destination == "Milan, IT (MXP)" %>
+        <%= "Dec 20, 2014" %> <br>
+      <% end %>
     </div>
     <div class="ticket">
       <p>GATE</p>
@@ -21,9 +31,9 @@
     <div class="ticket">
       <p>SEAT</p>
       <% if @flight.seat == "First Class" %>
-        3A
+        3D
       <% elsif @flight.seat == "Business Class" %>
-        6C
+        6A
       <% else %>
         22F
       <% end %>

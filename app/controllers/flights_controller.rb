@@ -2,7 +2,7 @@ class FlightsController < ApplicationController
   before_filter :authenticate_user!
 
   def index
-    @flights = current_user.flights.order("date ASC")
+    @flights = current_user.flights.order("destination ASC")
   end
 
   def show
@@ -44,7 +44,7 @@ class FlightsController < ApplicationController
 
   private
   def flight_params
-    params.require(:flight).permit(:origin, :destination, :date, :seat)
+    params.require(:flight).permit(:origin, :destination, :date, :seat, :day, :month, :year)
   end
 
 end
