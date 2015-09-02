@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.2.1'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -40,7 +41,7 @@ gem 'spring',        group: :development
 
 gem 'foundation-rails'
 gem 'hirb'
-gem 'pry-debugger'
+# gem 'pry-debugger'
 gem 'devise'
 # gem 'jquery-ui-rails'
 gem 'rails_12factor'
